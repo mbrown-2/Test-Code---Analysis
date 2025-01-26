@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <title>Home Page | KenoLens</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="default.php" class="brand">KenoLens</a>
+      <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="photo.html">Photo</a></li>
+        <li><a href="video.html">Video</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  <section id="home" class="banner">
+    <div class="banner-content">
+      <h1>KenoLens Portfolio</h1>
+      <a href="#portfolio" class="btn">My Work</a>
+    </div>
+  </section>
+
+  <section id="abouth" class="abouth">
+    <h2>About Me</h2>
+    <div class="abouth-content">
+      <img src="me.png" alt="Kevin">
+      <p>Photographer, videographer, and editor based in Sacramento, CA comitted to capturing stories that matter. This portfolio is a reflection of my creative journey, featuring work done for both myself and others. 
+        I am open to taking on new challenges, regardless of location and difficulty. My goal is to deliver exceptional results that transforms moments into long lasting memories.
+      </p>
+    </div>
+    <a href="about.html" class="btn">Learn More</a>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <a href="photo.html">
+          <img src="photo_p.jpg" alt="Photo Portfolio">
+        </a>
+        <p>PHOTOS</p>
+      </div>
+      <div class="portfolio-item">
+        <a href="video.html">
+          <img src="videop.JPG" alt="Video Portfolio">
+        </a>
+        <p>VIDEOS</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 KenoLens</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
